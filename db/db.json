@@ -13,7 +13,33 @@
     { "id": 6, "name": "Soups", "numRestaurants": 32, "imagePath": "assets/images/category-img6.png"  }
   ],
   "restaurants": [
-    { "id": 1, "name": "McDonald’s London", "imagePath": "assets/images/restaurant-img1.png" },
+    { 
+      "id": 1, 
+      "name": "McDonald’s London", 
+      "imagePath": "assets/images/restaurant-img1.png",
+      "slogan": "I'm lovin' it!",
+      "minimumOrderPrice": 12,
+      "deliveryTimeMin": 20,
+      "deliveryTimeMax": 25,
+      "rating": 3.4,
+      "numReviews": 1360,
+      "closingTime": "3:00 AM",
+      "menuOptions": ["Offers", "Burgers", "Fries", "Snacks", "Salads", "Cold Drinks", "Happy Meal®", "Desserts", " Hot drinks", "Sauces", " Orbit®"],
+      "offers": [
+        {
+          "name": "First Order Discount",
+          "discountPercentage": 20
+        },
+        {
+          "name": "Vegan Discount",
+          "discountPercentage": 20
+        },
+        {
+          "name": "Free ice Cream Offer",
+          "discountPercentage": 40
+        }
+      ]
+    },
     { "id": 2, "name": "Papa Johns", "imagePath": "assets/images/restaurant-img2.png"  },
     { "id": 3, "name": "KFC West London", "imagePath": "assets/images/restaurant-img3.png"  },
     { "id": 4, "name": "Texas Chicken", "imagePath": "assets/images/restaurant-img4.png"  },

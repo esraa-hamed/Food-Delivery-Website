@@ -28,7 +28,6 @@
         border-radius: 120px;
         text-decoration: none;
         color: black;
-         transition: background-color 0.2s ease;
 
         p{
             margin-bottom: 0;
@@ -36,7 +35,11 @@
 
     }
 
-    a:hover{
+    .div-not-clicked{
+        transition: background-color 0.2s ease;
+    }
+
+    .div-not-clicked:hover{
         background-color: #f2f2f2; 
     }
 }
