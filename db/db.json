@@ -38,7 +38,9 @@
           "name": "Free ice Cream Offer",
           "discountPercentage": 40
         }
-      ]
+      ],
+      "posterBackgroundImage": "assets/images/restaurant-img1-poster-bg.png",
+      "posterImage": "assets/images/restaurant-img1-poster.png"
     },
     { "id": 2, "name": "Papa Johns", "imagePath": "assets/images/restaurant-img2.png"  },
     { "id": 3, "name": "KFC West London", "imagePath": "assets/images/restaurant-img3.png"  },
