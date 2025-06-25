@@ -1,0 +1,42 @@
+<div class="home-container">
+
+    <app-poster-card></app-poster-card>
+
+    <div class="home-deals-div">
+        <div class="header-div">
+            <h3>Up to -40% 🎊 Order.uk exclusive deals</h3>
+            <div class="tabs-div">
+                <div [ngClass]="{'clicked-div': isTabOneClicked}" (click)="handleTabOneClick()"><p>Vegan</p></div>
+                <div [ngClass]="{'clicked-div': isTabTwoClicked}" (click)="handleTabTwoClick()"><p>Sushi</p></div>
+                <div [ngClass]="{'clicked-div': isTabThreeClicked}" (click)="handleTabThreeClick()"><p>Pizza & Fast food</p></div>
+                <div [ngClass]="{'clicked-div': isTabFourClicked}" (click)="handleTabFourClick()"><p>others</p></div>
+            </div>
+        </div>
+        <div class="flex-div" *ngIf="isTabThreeClicked">
+            @for(deal of dealsFastFood; track deal.id)
+            {
+                <app-deal-card [restaurantName]="deal.restaurantName" [imagePath]="deal.imagePath" [percentage]="deal.discountPercentage" style="width: 32%;"></app-deal-card>
+            }
+        </div>
+    </div>
+
+    <div class="home-categories-div">
+        <h3>Order.uk Popular Categories 🤩</h3>
+        <div class="flex-div">
+            @for(category of categories; track category.id)
+            {
+                <app-category-card [categoryName]="category.name" [numRestaurants]="category.numRestaurants" [imagePath]="category.imagePath" style="width: 16%;"></app-category-card>
+            }
+        </div>
+    </div>
+
+    <div class="home-restaurants-div">
+        <h3>Popular Restaurants</h3>
+        <div class="flex-div">
+            @for(restaurant of restaurants; track restaurant.id)
+            {
+                <app-restaurant-card [restaurantName]="restaurant.name" [imagePath]="restaurant.imagePath" style="width: 16%;" (click)="handleRestaurantClick(restaurant.id)"></app-restaurant-card>
+            }
+        </div>
+    </div>
+</div>

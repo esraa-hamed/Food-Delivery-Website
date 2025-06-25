@@ -1,0 +1,30 @@
+.category-container{
+    height: 266px;
+    //width: 238px;
+    border-radius: 12px;
+    cursor: pointer;
+
+    img{
+        height: 203px;
+        width: 100%;
+    }
+
+    .lower-div{
+        background-color: #F5F5F5;
+        border-radius: 0px 0px 12px 12px;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-bottom: 1px;
+        h3{
+            color: #03081F;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        p{
+            color: #FC8A06;
+            font-size: 13px;
+        }
+    }
+    
+}

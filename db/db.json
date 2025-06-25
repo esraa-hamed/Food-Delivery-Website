@@ -1,0 +1,28 @@
+{
+  "products": [
+    { "id": 1, "name": "Burger", "price": 10 },
+    { "id": 2, "name": "Pizza", "price": 20 },
+    { "id": 3, "name": "Pasta", "price": 25 }
+  ],
+  "categories": [
+    { "id": 1, "name": "Burgers & Fast food", "numRestaurants": 21, "imagePath": "assets/images/category-img1.png" },
+    { "id": 2, "name": "Salads", "numRestaurants": 32, "imagePath": "assets/images/category-img2.png"  },
+    { "id": 3, "name": "Pasta & Casuals", "numRestaurants": 4, "imagePath": "assets/images/category-img3.png"  },
+    { "id": 4, "name": "Pizza", "numRestaurants": 32, "imagePath": "assets/images/category-img4.png"  },
+    { "id": 5, "name": "Breakfast", "numRestaurants": 4, "imagePath": "assets/images/category-img5.png"  },
+    { "id": 6, "name": "Soups", "numRestaurants": 32, "imagePath": "assets/images/category-img6.png"  }
+  ],
+  "restaurants": [
+    { "id": 1, "name": "McDonald’s London", "imagePath": "assets/images/restaurant-img1.png" },
+    { "id": 2, "name": "Papa Johns", "imagePath": "assets/images/restaurant-img2.png"  },
+    { "id": 3, "name": "KFC West London", "imagePath": "assets/images/restaurant-img3.png"  },
+    { "id": 4, "name": "Texas Chicken", "imagePath": "assets/images/restaurant-img4.png"  },
+    { "id": 5, "name": "Burger King", "imagePath": "assets/images/restaurant-img5.png"  },
+    { "id": 6, "name": "Shaurma 1", "imagePath": "assets/images/restaurant-img6.png"  }
+  ],
+  "fastFoodDeals": [
+    { "id": 1, "restaurantName": "Chef Burgers London", "discountPercentage": 40, "imagePath": "assets/images/deal-img1.png" },
+    { "id": 2, "restaurantName": "Grand Ai Cafe London", "discountPercentage": 20, "imagePath": "assets/images/deal-img2.png"  },
+    { "id": 3, "restaurantName": "Butterbrot Caf’e London", "discountPercentage": 17, "imagePath": "assets/images/deal-img3.png"  }
+  ]
+}

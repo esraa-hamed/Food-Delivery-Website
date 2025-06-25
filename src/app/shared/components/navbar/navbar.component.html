@@ -1,0 +1,13 @@
+<div class="navbar-container">
+<div class="nav-logo">
+    <img src="assets/images/navbar-logo-img.png">
+</div>
+<nav class="nav-links">
+    <a routerLink="/home" [ngClass]="{'div-clicked': isTabOneClicked}" (click)="handleTabOneClicked()">Home</a>
+    <a routerLink="/menu" [ngClass]="{'div-clicked': isTabTwoClicked}" (click)="handleTabTwoClicked()">Browse Menu</a>
+    <a [ngClass]="{'div-clicked': isTabThreeClicked}" (click)="handleTabThreeClicked()">Special Offers</a>
+    <a routerLink="/restaurants" [ngClass]="{'div-clicked': isTabFourClicked}" (click)="handleTabFourClicked()">Restaurants</a>
+    <a [ngClass]="{'div-clicked': isTabFiveClicked}" (click)="handleTabFiveClicked()">Track Order</a>
+    <a class="login-tab" (click)="handleTabSixClicked()"><img src="assets/images/contact-logo-img.png"><p>Login/Signup</p></a>
+</nav>
+</div>

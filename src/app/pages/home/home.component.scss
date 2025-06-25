@@ -1,0 +1,89 @@
+.home-container{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    //min-width: fit-content;
+}
+
+.flex-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.home-categories-div{
+    margin-top: 3rem;
+}
+
+.home-restaurants-div{
+   margin-top: 3rem;
+}
+
+.home-deals-div{
+    margin-top: 3rem;
+
+    .header-div{
+        display: flex;
+        justify-content: space-between;
+
+        .tabs-div{
+            display: flex;
+            justify-content: space-around;
+            width: 45%;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 2rem;
+
+            div{
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 219px;
+                height: 50px;
+
+                p{
+                    margin-top: 1rem;
+                }
+            }
+
+            .clicked-div{
+                color: #FC8A06;
+                border: 1px solid #FC8A06;
+                border-radius: 120px;
+            }
+        }
+    }
+}
+
+app-deal-card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+app-deal-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+app-category-card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+app-category-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+app-restaurant-card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+app-restaurant-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

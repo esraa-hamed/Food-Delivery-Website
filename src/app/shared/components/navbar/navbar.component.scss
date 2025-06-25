@@ -1,0 +1,61 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    align-items: center;
+    
+
+    .div-clicked{
+       background-color: #FC8A06;
+       color: white;
+    }
+
+    a{
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 45px;
+        width: 234px;
+        border-radius: 120px;
+        text-decoration: none;
+        color: black;
+         transition: background-color 0.2s ease;
+
+        p{
+            margin-bottom: 0;
+        }
+
+    }
+
+    a:hover{
+        background-color: #f2f2f2; 
+    }
+}
+
+.login-tab{
+    background-color: #03081F;
+    height: 61px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    p{
+        color: white;
+    }
+    img{
+        height: 27px;
+        width: 31px;
+    }
+}
+
+.login-tab:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
