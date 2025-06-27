@@ -1,0 +1,54 @@
+.poster-container{
+    background-color: #F4F4F4;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 4rem;
+    border-radius: 12px;
+    display: flex;
+    height: 477px;
+}
+
+.poster-div-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //padding-top: 3rem;
+    width: 60%;
+
+    .p-restaurant-slogan
+    {
+        font-size: 20px;
+    }
+    .h2-restaurant-title
+    {
+        font-size: 54px;
+        font-weight: 600;
+    }
+    .flex-div
+    {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        div{
+            background-color: #03081F;
+            color: white;
+            padding: 10px 16px 10px 16px; 
+            border-radius: 120px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 49%;
+            img{
+                height: 34px;
+                width: 34px;
+            }
+        }
+        p{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.poster-div-right{
+  
+}

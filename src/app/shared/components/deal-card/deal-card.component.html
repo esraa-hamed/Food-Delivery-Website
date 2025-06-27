@@ -3,7 +3,9 @@
         <p>- {{ percentage }} %</p>
     </div>
         <div class="lower-div">
-            <p>Restaurant</p>
-            <h3>{{ restaurantName }}</h3>
+            <p *ngIf="!dealName">Restaurant</p>
+            <p *ngIf="dealName">{{restaurantName}}</p>
+            <h3 *ngIf="!dealName">{{ restaurantName }}</h3>
+            <h3 *ngIf="dealName">{{ dealName }}</h3>
         </div>
 </div>

@@ -1,1 +1,48 @@
-<p>restaurant-detail works!</p>
+<div class="restaurant-detail-container">
+    <div class="padding-container">
+    <app-rd-poster-card  *ngIf="restaurant" 
+                         [bgImagePath]="restaurant.posterBackgroundImage"
+                         [slogan]="restaurant.slogan"
+                         [name]="restaurant.name"
+                         [minOrder]="restaurant.minimumOrderPrice"
+                         [minDeliveryTime]="restaurant.deliveryTimeMin"
+                         [maxDeliveryTime]="restaurant.deliveryTimeMax"
+                         [imagePath]="restaurant.posterImage"
+    ></app-rd-poster-card>
+    <div class="orange-div">
+        <img src="assets/images/clock-icon-img.png">
+        <p>Open until {{restaurant.closingTime}}</p>
+    </div>
+
+    <div class="div-title">
+        <h2>All offers from {{restaurant.name}}</h2>
+        <div class="search-div">
+             <input type="text" class="form-control" placeholder="Search from menu..">
+        </div>
+    </div>
+    </div>
+
+    <div class="tabs-div">
+        @for(option of restaurant.menuOptions; track option)
+        {
+            <div>
+                <p>{{option}}</p>
+            </div>
+        }
+    </div>
+
+    <div class="offers-div padding-container">
+        @for(offer of restaurant.offers; track offer.name)
+        {
+            <app-deal-card [restaurantName]="restaurant.name" [percentage]="offer.discountPercentage" [dealName]="offer.name" [imagePath]="offer.imagePath"></app-deal-card>
+        }
+    </div>
+
+    @for(category of restaurant.categories; track category.name)
+    {
+        <div class="menu-div padding-container">
+            <h2>{{ category.name }}</h2>
+        </div>
+    }
+
+</div>

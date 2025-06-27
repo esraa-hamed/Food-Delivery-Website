@@ -1,0 +1,17 @@
+<div class="poster-container"  [ngStyle]="{ 'background-image': 'url(' + bgImagePath + ')'  }">
+    <div class="poster-div-left">
+        <p class="p-restaurant-slogan">
+            {{slogan}}
+        </p>
+        <h2 class="h2-restaurant-title">
+            {{name}}
+        </h2>
+        <div class="flex-div">
+            <div><img src="assets/images/list-icon-img.png"><p>Minimum Order: {{minOrder}} GPB</p></div>
+            <div><img src="assets/images/delivery-icon-img.png"><p>Delivery in {{minDeliveryTime}}-{{maxDeliveryTime}} Minutes </p></div>
+        </div>
+    </div>
+    <div class="poster-div-right">
+        <img [src]="imagePath">
+    </div>
+ </div>

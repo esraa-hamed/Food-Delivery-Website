@@ -11,4 +11,5 @@ export class DealCardComponent {
 @Input() restaurantName : string= '';
 @Input() imagePath : string = '';
 @Input() percentage : number = 0;
+@Input() dealName: string = '';
 }

@@ -1,0 +1,85 @@
+.padding-container{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.orange-div{
+    background-color: #FC8A06;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    height: 61px;
+    width: 20%;
+    border-radius: 0px 12px 12px 0px;
+    margin-top: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        margin-bottom: 0px;
+    }
+    img{
+        margin-right: 5px;
+    }
+}
+
+.div-title{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    h2{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    input{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border: 1px solid #03081F;
+        border-radius: 120px;
+    }
+}
+
+.tabs-div{
+    background-color: #F3F3F3;
+    font-size: 21px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    p{
+        margin-bottom: 0px;
+    }
+}
+
+.offers-div{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    
+    app-deal-card{
+        width: 30%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    app-deal-card:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.menu-div{
+    h2{
+        font-size: 34px;
+        font-weight: 700;
+        color: #FC8A06;
+    }
+}
