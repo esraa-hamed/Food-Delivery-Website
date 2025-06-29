@@ -42,6 +42,12 @@
     {
         <div class="menu-div padding-container">
             <h2>{{ category.name }}</h2>
+            <div class="grid-container">
+                @for(item of category.items; track item.name)
+                {
+                   <app-menu-item-card [name]="item.name" [price]="item.price" [description]="item.description" [imagePath]="item.imagePath"></app-menu-item-card>
+                }
+            </div>
         </div>
     }
 

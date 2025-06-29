@@ -49,32 +49,38 @@
             {
               "name": "Royal Cheese Burger with extra Fries",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
-              "price": 23.10
+              "price": 23.10,
+              "imagePath": "assets/images/menu-item-img2.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img2.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img2.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img2.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img2.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img2.png"
             }
           ]
         },
@@ -84,32 +90,38 @@
             {
               "name": "Royal Cheese Burger with extra Fries",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
-              "price": 23.10
+              "price": 23.10,
+              "imagePath": "assets/images/menu-item-img1.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img1.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img1.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img1.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img1.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img1.png"
             }
           ]
         },
@@ -119,32 +131,38 @@
             {
               "name": "Royal Cheese Burger with extra Fries",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
-              "price": 23.10
+              "price": 23.10,
+              "imagePath": "assets/images/menu-item-img3.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img3.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img3.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img3.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img3.png"
             },
             {
               "name": "The classics for 3",
               "description": "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
-              "price": 35.20
+              "price": 35.20,
+              "imagePath": "assets/images/menu-item-img3.png"
             }
           ]
         }

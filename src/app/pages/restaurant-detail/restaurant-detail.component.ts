@@ -5,9 +5,10 @@ import { Restaurant } from '../../shared/models/restaurant.model';
 import { RdPosterCardComponent } from '../../shared/components/rd-poster-card/rd-poster-card.component';
 import { CommonModule } from '@angular/common';
 import { DealCardComponent } from '../../shared/components/deal-card/deal-card.component';
+import { MenuItemCardComponent } from '../../shared/components/menu-item-card/menu-item-card.component';
 @Component({
   selector: 'app-restaurant-detail',
-  imports: [RdPosterCardComponent, CommonModule, DealCardComponent],
+  imports: [RdPosterCardComponent, CommonModule, DealCardComponent, MenuItemCardComponent],
   templateUrl: './restaurant-detail.component.html',
   styleUrl: './restaurant-detail.component.scss'
 })

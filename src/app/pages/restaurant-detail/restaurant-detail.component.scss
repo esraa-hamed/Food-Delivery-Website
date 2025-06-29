@@ -1,7 +1,7 @@
 .padding-container{
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 .orange-div{
@@ -82,4 +82,19 @@
         font-weight: 700;
         color: #FC8A06;
     }
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+app-menu-item-card{
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+app-menu-item-card:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
