@@ -11,4 +11,9 @@ export class MenuItemCardComponent {
 @Input() description !: string;
 @Input() price !: number;
 @Input() imagePath !: string;
+
+handleAddToCart() : void 
+{
+  
+}
 }
