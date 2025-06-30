@@ -12,9 +12,9 @@
             </div>
             <div class="cart-div">
                 <div class="icon-div"><img src="assets/images/cart-icon-img.png"></div>
-                <div class="items-div">{{numItems}} items</div>
-                <div class="price-div">GPB {{totalPrice}}</div>
-                <div class="arrow-div"><img src="assets/images/forward-icon-img.png"></div>
+                <div class="items-div">{{totalNumber()}} items</div>
+                <div class="price-div">GPB {{totalPrice() | number: '1.0-2'}}</div>
+                <div class="arrow-div" (click)="handleGoToCart()"><img src="assets/images/forward-icon-img.png"></div>
             </div>
         </div>
     </div>

@@ -14,10 +14,16 @@ export class CartService {
   addToCart(product: Product) : void
   {
     const itemsArr = this.cartItemsSignal();
+    let updatedItemsArr;
     const existingItem = itemsArr.find(item => item.product.id === product.id);
-    if(existingItem)
+    const existingIndex = itemsArr.findIndex(item => item.product.id === product.id);
+    if(existingIndex !== -1)
     {
-      existingItem.quantity++;
+      const updatedItem = {
+        ...itemsArr[existingIndex],
+        quantity: itemsArr[existingIndex].quantity + 1
+      }
+      itemsArr[existingIndex] = updatedItem;
     }
     else
     {
@@ -26,7 +32,7 @@ export class CartService {
         quantity: 1
       })
     }
-    this.cartItemsSignal.set(itemsArr);
+    this.cartItemsSignal.set([...itemsArr]);
   }
 
   getCartProductsSignal() : Signal<CartItem[]>
@@ -34,7 +40,7 @@ export class CartService {
     return this.cartItemsSignal.asReadonly();
   }
 
-  incrementQuantity(productID: number)
+  incrementQuantity(productID: string)
   {
     var itemsArr = this.cartItemsSignal();
     const item = itemsArr.find(item => item.product.id === productID);
@@ -43,10 +49,10 @@ export class CartService {
       return ;
     }
     item.quantity ++;
-    this.cartItemsSignal.set(itemsArr);
+    this.cartItemsSignal.set([...itemsArr]);
   }
 
-  decrementQuantitySignal(productID: number)
+  decrementQuantitySignal(productID: string)
   {
     var itemsArr = this.cartItemsSignal();
     const item = itemsArr.find(item => item.product.id === productID);
@@ -62,7 +68,7 @@ export class CartService {
     {
       itemsArr = itemsArr.filter(item => item.product.id !== productID);
     }
-    this.cartItemsSignal.set(itemsArr);
+    this.cartItemsSignal.set([...itemsArr]);
   }
 
 
