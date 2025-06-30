@@ -1,1 +1,39 @@
-<p>cart works!</p>
+<div class="cart-container">
+
+    <div class="div-header">
+        <img src="assets/images/cart-icon-img.png">
+        <h3>My Basket</h3>
+    </div>
+
+    <div *ngIf="totalNumber()>0" class="div-body">
+        @for(item of cartItemsSignal(); track item.product.id)
+        {
+            <div class="cart-item">
+                <div class="div-count">
+                    <p>{{item.quantity | number: '1.0-2'}}</p>
+                    <p>x</p>
+                </div>
+                <div class="div-details">
+                    <p class="p-price">£{{item.product.price}}</p>
+                    <p class="p-name">{{item.product.name}}</p>
+                </div>
+                <div class="div-remove" (click)="handleRemoveItem(item.product.id)">
+                    <img src="assets/images/remove-icon-img.png">
+                </div>
+            </div>
+        }
+        <div class="div-bottom">
+            <div class="div-total">
+                <p class="p-left">Total to pay</p>
+                <p class="p-right">£ {{totalPrice() | number : '1.0-2'}}</p>
+            </div>
+            <div class="div-checkout">
+                <p>Checkout!</p>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="totalNumber()===0" class="div-empty">
+        <p>No items in cart</p>
+    </div>
+</div>
