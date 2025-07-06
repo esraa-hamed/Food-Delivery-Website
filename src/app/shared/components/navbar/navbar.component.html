@@ -1,13 +1,54 @@
-<div class="navbar-container">
-<div class="nav-logo">
+<!-- <div class="container pt-5">
+<div class="row">
+<div class="nav-logo col-md-3">
     <img src="assets/images/navbar-logo-img.png">
 </div>
-<nav class="nav-links">
-    <a routerLink="/home" [ngClass]="{'div-clicked': isTabOneClicked, 'div-not-clicked': !isTabOneClicked}" (click)="handleTabOneClicked()">Home</a>
-    <a routerLink="/menu" [ngClass]="{'div-clicked': isTabTwoClicked, 'div-not-clicked': !isTabTwoClicked}" (click)="handleTabTwoClicked()">Browse Menu</a>
-    <a [ngClass]="{'div-clicked': isTabThreeClicked, 'div-not-clicked': !isTabThreeClicked}" (click)="handleTabThreeClicked()">Special Offers</a>
-    <a routerLink="/restaurants" [ngClass]="{'div-clicked': isTabFourClicked, 'div-not-clicked': !isTabFourClicked}" (click)="handleTabFourClicked()">Restaurants</a>
-    <a [ngClass]="{'div-clicked': isTabFiveClicked, 'div-not-clicked': !isTabFiveClicked}" (click)="handleTabFiveClicked()">Track Order</a>
-    <a class="login-tab" (click)="handleTabSixClicked()"><img src="assets/images/contact-logo-img.png"><p>Login/Signup</p></a>
+<nav class="nav-links row col-md-9">
+    <a routerLink="/home" class="col-md-2 col-sm-0" [ngClass]="{'div-clicked': isTabOneClicked, 'div-not-clicked': !isTabOneClicked}" (click)="handleTabOneClicked()">Home</a>
+    <a routerLink="/menu" class="col-md-2 col-sm-0" [ngClass]="{'div-clicked': isTabTwoClicked, 'div-not-clicked': !isTabTwoClicked}" (click)="handleTabTwoClicked()">Browse Menu</a>
+    <a class="col-md-2 col-sm-0" [ngClass]="{'div-clicked': isTabThreeClicked, 'div-not-clicked': !isTabThreeClicked}" (click)="handleTabThreeClicked()">Special Offers</a>
+    <a class="col-md-2 col-sm-0" routerLink="/restaurants" [ngClass]="{'div-clicked': isTabFourClicked, 'div-not-clicked': !isTabFourClicked}" (click)="handleTabFourClicked()">Restaurants</a>
+    <a class="col-md-2 col-sm-0" [ngClass]="{'div-clicked': isTabFiveClicked, 'div-not-clicked': !isTabFiveClicked}" (click)="handleTabFiveClicked()">Track Order</a>
+    <a class="login-tab col-md-2 col-sm-0" (click)="handleTabSixClicked()"><img src="assets/images/contact-logo-img.png"><p>Login/Signup</p></a>
 </nav>
 </div>
+</div> -->
+
+<nav class="navbar navbar-expand-xl pt-5">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="nav-logo me-4">
+            <img src="assets/images/navbar-logo-img.png">
+        </div>
+
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+            <ul class="navbar-nav justify-content-between align-items-center custom-ul">
+                <li class="nav-item col-2">
+                    <a routerLink="/home" class="nav-link custom-tab" [ngClass]="{'div-clicked': isTabOneClicked, 'div-not-clicked': !isTabOneClicked}" (click)="handleTabOneClicked()">Home</a>
+                </li>
+                <li class="nav-item col-2">
+                    <a routerLink="/menu" class="nav-link custom-tab" [ngClass]="{'div-clicked': isTabTwoClicked, 'div-not-clicked': !isTabTwoClicked}" (click)="handleTabTwoClicked()">Browse Menu</a>
+                </li>
+                <li class="nav-item col-2">
+                    <a class="nav-link custom-tab" [ngClass]="{'div-clicked': isTabThreeClicked, 'div-not-clicked': !isTabThreeClicked}" (click)="handleTabThreeClicked()">Special Offers</a>
+                </li>
+                <li class="nav-item col-2">
+                    <a class="nav-link custom-tab" routerLink="/restaurants" [ngClass]="{'div-clicked': isTabFourClicked, 'div-not-clicked': !isTabFourClicked}" (click)="handleTabFourClicked()">Restaurants</a>
+                </li>
+                <li class="nav-item col-2">
+                    <a class="nav-link custom-tab" [ngClass]="{'div-clicked': isTabFiveClicked, 'div-not-clicked': !isTabFiveClicked}" (click)="handleTabFiveClicked()">Track Order</a>
+                </li>
+                <li class="nav-item col-2">
+                    <a class="login-tab nav-link" (click)="handleTabSixClicked()"><img src="assets/images/contact-logo-img.png"><p>Login/Signup</p></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
